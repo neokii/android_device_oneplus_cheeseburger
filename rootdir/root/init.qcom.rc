@@ -61,8 +61,8 @@ on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
     # Allow subsystem (modem etc) debugging
-    write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
+    write /sys/kernel/boot_adsp/boot 1
     exec u:r:qti_init_shell:s0 -- /init.qcom.early_boot.sh
 
 on boot
@@ -367,6 +367,7 @@ service iop /system/bin/iop
     disabled
     socket iop seqpacket 0666 root system
     writepid /dev/cpuset/system-background/tasks
+    disabled # comma hax
 
 service qcomsysd /system/bin/qcom-system-daemon
     class main

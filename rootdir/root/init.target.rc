@@ -265,6 +265,7 @@ service fingerprintd /system/bin/fingerprintd
     class late_start
     user system
     group system
+    disabled
 
 service qvop-daemon /system/bin/qvop-daemon
     class late_start
@@ -412,6 +413,7 @@ service ifaadaemon /system/bin/ifaadaemon
     class late_start
     user system
     group system
+    disabled
 
 service spdaemon /system/bin/spdaemon
    class core

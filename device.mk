@@ -176,13 +176,13 @@ PRODUCT_PACKAGES += \
 
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    OneplusDoze
+#PRODUCT_PACKAGES += \
+#    OneplusDoze
 
 # Fingerprint sensor
-PRODUCT_PACKAGES += \
-    fingerprintd \
-    OneplusPocketMode
+#PRODUCT_PACKAGES += \
+#    fingerprintd \
+#    OneplusPocketMode
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
